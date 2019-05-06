@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## Synopsys Cloud Operations Coding Exercise
+An exercise for Cloud Operations candidates.
 
-You can use the [editor on GitHub](https://github.com/sig-cloudops/sig-cloudops.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Goals
+The goals of the exercise are the following:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Show that the candidate is hands on and can write code that configures and builds cloud resources.
+2. Show that candidates can think about big picture topics like microservices.
+3. Give us a vehicle for a deeper discussion in a face to face interview setting.
 
-### Markdown
+### Overview
+The purpose of this exercise is to demonstrate that you can write code that launches the needed infrastructure to run a simple Nginx container. When accessing the container web interface it should display the hostname of the container and some sample database data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### What to Submit
+A link to a github repository with code that accomplishes the following:
+1. Provisions the needed infrastructure to satisfy the following:
+  * Creates a relational database with provided postgres or mysql database dump.
+  * Runs a Nginx container that outputs the following:
+    * Hostname of container
+    * Output from a simple database query (from sample database dump)
+  * Accessible to the world on port 443 or 80
+  
+2. Demonstrates that it is functioning
+  * A README file with at least the following information
+    * Instructions that allow us to run your code
+    * A description of your solution noting interesting choices you made and why you made them
+    * A list of resources you consulted to accomplish the exercise
+    * Feedback on the exercise and some information about how long you spent on it
 
-```markdown
-Syntax highlighted code block
+### Requirements
+* Must use Google Cloud. The Google Cloud $300 free credit should be sufficient to compete this project. If your ideal solution would use additional services please include that information in your README
+* All parts of the infrastructure setup should be automated.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Extra Credit
+* Secure the connection between Nginx and your Database.
+* Secure the web interface. 
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sig-cloudops/sig-cloudops.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Questions (to facilitate discussion when we get together):
+- How did you choose your tool to build your infrastructure?  Why?
+- How did you choose your platform to run the container? Why? 
+- How would you monitor this instance?  What metrics would you monitor?
+- Could you extend your solution to run multiple containers?  What would need to change to support this use case?
+- Could you make this secure more secure? How? 
+- Was it a priority to make your code well structured, extensible, and reusable?
+- What sacrifices did you make due to time?
