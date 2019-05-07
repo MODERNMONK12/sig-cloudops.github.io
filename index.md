@@ -13,19 +13,17 @@ The purpose of this exercise is to demonstrate that you can write code that laun
 
 ### What to Submit
 A link to a github repository with code that accomplishes the following:
+
 1. Provisions the needed infrastructure to satisfy the following:
-  * Creates a relational database with provided postgres or mysql database dump.
-  * Runs a Nginx container that outputs the following:
-    * Hostname of container
-    * Output from a simple database query (from sample database dump)
+  * Creates a relational database with provided postgres or mysql database dump
+  * Runs a Nginx container that outputs the hostname of container, and output from a simple database query (from sample database dump)
   * Accessible to the world on port 443 or 80
   
-2. Demonstrates that it is functioning
-  * A README file with at least the following information
-    * Instructions that allow us to run your code
-    * A description of your solution noting interesting choices you made and why you made them
-    * A list of resources you consulted to accomplish the exercise
-    * Feedback on the exercise and some information about how long you spent on it
+2. Demonstrates that it is functioning, provide a README file with the following information:
+  * Instructions that allow us to run your code
+  * A description of your solution noting interesting choices you made and why you made them
+  * A list of resources you consulted to accomplish the exercise
+  * Feedback on the exercise and some information about how long you spent on it
 
 ### Requirements
 * Must use Google Cloud. The Google Cloud $300 free credit should be sufficient to compete this project. If your ideal solution would use additional services please include that information in your README
